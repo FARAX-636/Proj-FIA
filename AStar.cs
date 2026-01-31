@@ -1,11 +1,12 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AStar
+public class AStar : MonoBehaviour
 {
 	public static List<Node> FindPathToGoal(Node start, Node goal)
 	{
-		PriorityQueue<Node, float> openList = new PriorityQueue<Node, float>();		 // frontiera
+		PriorityQueue<Node> openList = new PriorityQueue<Node>();		 // frontiera
 		HashSet<Node> closedList = new HashSet<Node>();  	// nodi esplorati
 
 		// inizializziamo i valori del nodo di partenza
@@ -65,7 +66,7 @@ public class AStar
 	/* la nostra euristica; è stata scelta la distanza Euclidea perché è la scelta migliore in quanto la muffa si sposta in 8 direzioni */
 	public static float EuclideanDistance(Node a, Node b)
 	{
-		return Mathf.Sqrt(Mathf.Pow(a.position.x - b.position.x, 2) + Mathf.Pow(a.position.y - b.position.y, 2));
+		return Mathf.Sqrt(Mathf.Pow(a.transform.position.x - b.transform.position.x, 2) + Mathf.Pow(a.transform.position.y - b.transform.position.y, 2));
 	}
 
 }

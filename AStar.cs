@@ -30,7 +30,7 @@ public class AStar : MonoBehaviour
 			{
 				if (!n.isObstacle && !closedList.Contains(n))
 				{
-					float tentativeG = current.g + 1f;  // per ora, 1f è un placeholder
+					float tentativeG = current.g + 1f;
 					
 					if (tentativeG < n.g)
 					{

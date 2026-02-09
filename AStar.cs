@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AStar : MonoBehaviour
 {
-	public static List<Node> FindPathToGoal(Node start, Node goal)
+	public static List<Node> FindPathToGoal(Node start, Node goal, bool useBFSNodes)
 	{
 		PriorityQueue<Node> openList = new PriorityQueue<Node>();		 // frontiera
 		HashSet<Node> closedList = new HashSet<Node>();  	// nodi esplorati
@@ -28,7 +28,7 @@ public class AStar : MonoBehaviour
 			// controlliamo i vicini e calcoliamo le funzioni f, g, h di ognuno di loro
 			foreach (Node n in current.neighbors)
 			{
-				if (!n.isObstacle && !closedList.Contains(n))
+				if (!n.isObstacle && !closedList.Contains(n) && (useBFSNodes && !n.previouslyExploredByBFS) == false)
 				{
 					float tentativeG = current.g + 1f;
 					

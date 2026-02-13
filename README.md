@@ -5,3 +5,5 @@ Contenuto della repository:
 La documentazione che spiega il progetto in maniera più formale
 La presentazione powerpoitn del progetto, che spiega in maniera più breve e "informale" il progetto
 La demo del progetto. Si tratta di una simulazione creata su unity che implementa i due algoritmi utilizzati e persino una versione che utilizza entrambi assieme.
+
+La "simulazione" ha due versioni, una per sistema operativo Linux e una per sistema operativo Windows

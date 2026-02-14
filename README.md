@@ -8,7 +8,6 @@ La demo del progetto. Si tratta di una simulazione creata su unity che implement
 
 La demo (nominata moldSimulation) ha due versioni, una per sistema operativo Linux e una per sistema operativo Windows.
 
-*La documentazione è presente sia nel formato word (quello su cui abbiamo fatto tutti i commit), in un formato dal word al PDF (ossia "FIAsarum" che manteniamo per conservare i commit effettuati su di esso) 
-e un formato PDF proveniente dal formato LaTeX (quest'ultimo è effettivamente quello che verrà consegnato)
+*La documentazione è presente sia nel formato word (quello su cui abbiamo fatto tutti i commit) e un formato PDF proveniente dal formato LaTeX (quest'ultimo è effettivamente quello che verrà consegnato).
 
 **Discorso simile a quello della documentazione vale anche per la presentazione. Infatti c'è sia la versione powerpoint che la versione PDF, questo per mantenere tutti i commit effettuati sulla versione powerpoint.
